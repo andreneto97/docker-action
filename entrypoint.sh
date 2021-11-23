@@ -8,4 +8,4 @@ tar -czf workspace.tar.gz --exclude=workspace.tar.gz .
 echo "Check Tar file"
 ls
 echo "Do a GET"
-curl --location --request GET 'https://jsonplaceholder.typicode.com/todos/1'
+curl -s 'https://jsonplaceholder.typicode.com/todos/1'
