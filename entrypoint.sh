@@ -1,4 +1,6 @@
 #!/bin/sh -l
+apk add curl
+apk add bash
 
 echo "Hello $1"
 ls
