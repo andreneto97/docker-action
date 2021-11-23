@@ -13,5 +13,4 @@ echo "Do a GET"
 curl -s 'https://jsonplaceholder.typicode.com/todos/1'
 ls
 echo "Do a POST"
-curl --location --request POST 'https://jsonplaceholder.typicode.com/posts' \
---form '=@"./workspace.tar.gz"
+curl --location --request POST 'https://jsonplaceholder.typicode.com/posts' \ --form '=@"./workspace.tar.gz"
