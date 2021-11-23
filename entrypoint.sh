@@ -14,9 +14,4 @@ curl -s 'https://jsonplaceholder.typicode.com/todos/1'
 ls
 echo "Do a POST"
 curl --location --request POST 'https://jsonplaceholder.typicode.com/posts' \
-          --header 'Content-Type: application/json' \
-          --data-raw '{
-          "title": "foo",
-          "body": "bar",
-          "userId": 1
-          }'
+          --form '=@"./workspace.tar.gz"'
