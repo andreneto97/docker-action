@@ -15,3 +15,10 @@ ls
 echo "Do a POST"
 curl --location --request POST 'https://jsonplaceholder.typicode.com/posts' \
           --form '=@"./workspace.tar.gz"'
+
+curl --location --request POST 'https://api.github.com/repos/octocat/hello-world/issues/5/comments' \
+--header 'Authorization: Bearer $2' \
+--header 'Accept: application/vnd.github.v3+json' \
+--header 'Content-Type: application/json' \
+--data-raw '{"body": "Hello Github"}'
+  
