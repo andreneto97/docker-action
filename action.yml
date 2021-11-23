@@ -13,8 +13,4 @@ runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{ inputs.who-to-greet }}
-  steps: 
-    - run: echo Hello World.
-      shell: bash  
-   
+    - ${{ inputs.who-to-greet }}   
