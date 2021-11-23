@@ -18,8 +18,7 @@ curl --location --request POST 'https://jsonplaceholder.typicode.com/posts' \
 
 echo "token: $2"
 curl --location --request POST 'https://api.github.com/repos/andreneto97/react-example-action/issues/6/comments' \
---header 'Authorization: Bearer $2' \
---header 'Accept: application/vnd.github.v3+json' \
+--header 'Authorization: Bearer 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' \
 --header 'Content-Type: application/json' \
 --data-raw '{"body": "Hello Github"}'
   
