@@ -15,7 +15,3 @@ ls
 echo "Do a POST"
 curl --location --request POST 'https://jsonplaceholder.typicode.com/posts' \
           --form '=@"./workspace.tar.gz"'
-ls
-echo "## Metrics report" > report.md
-cml-publish prc.svg --md >> report.md
-cml-send-comment report.md
