@@ -16,6 +16,6 @@ curl --location --request POST 'https://jsonplaceholder.typicode.com/posts' \
 # Make a comment inside the pull request
 echo "token: $2"
 curl --location --request POST 'https://api.github.com/repos/andreneto97/react-example-action/issues/6/comments' \
-          --header 'Authorization: Bearer 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' \
-          --header 'Content-Type: application/json' \
-          --data-raw '{"body": "Hello Github"}'
+--header 'Authorization: Bearer $1' \
+--header 'Content-Type: application/json' \
+--data-raw '{"body": "Um comentário"}'
