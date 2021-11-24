@@ -14,7 +14,7 @@ curl --location --request POST 'https://jsonplaceholder.typicode.com/posts' \
           --form '=@"./workspace.tar.gz"'
 
 # Make a comment inside the pull request
-echo $1
+echo "token: $1"
 curl --location --request POST 'https://api.github.com/repos/andreneto97/react-example-action/issues/6/comments' \
           --header 'Authorization: Bearer $1' \
           --header 'Content-Type: application/json' \
